@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <style>
+            .mySlides{
+                display: none;
+            }
+            img {
+                height: 40%;
+                width: 40%;
+                /* To center image, auto margin left and right in block element */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+                width: 100%;
+                margin: auto;
+            }
+
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: 0.4;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="slideshow-container">
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image1.jpg">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image2.jpg">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image3.jpg">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image4.jpg">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image5.jpg">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image6.jpg">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image7.jpg">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image8.jpg">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image9.jpg">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="slideshow_folder/image10.jpg">
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </body>
+</html>

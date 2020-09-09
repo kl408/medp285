@@ -1,0 +1,12 @@
+body{
+    font-family: 'Space Mono', monospace;
+    color: #F2B5F3;
+    background: rgb(133,89,136);
+    background: linear-gradient(0deg, rgb(15, 1, 39) 0%, rgb(13, 1, 32) 100%);
+  }
+
+
+.nav-links a{
+    color: #F2B5F3;
+    text-decoration: none;
+  }
