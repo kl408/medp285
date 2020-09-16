@@ -1,8 +1,8 @@
 body{
     font-family: 'Space Mono', monospace;
-    color: #F2B5F3;
+    color: #0a0e42;
     background: rgb(133,89,136);
-    background: linear-gradient(0deg, rgb(15, 1, 39) 0%, rgb(13, 1, 32) 100%);
+    background: linear-gradient(0deg, rgb(153, 144, 230) 0%, rgb(31, 3, 54) 100%);
   }
 
 
