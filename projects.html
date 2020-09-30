@@ -12,8 +12,6 @@
          <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
          <!-- Favicon -->
          <link rel="icon" href="img/favicon.ico">
-         <!-- Animations -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
@@ -30,27 +28,20 @@
             </ul>
         </nav>
 
-        <!-- header -->
-        <div data-aos="fade-in" data-aos-duration="1300">
-        <picture>
-            <source media="(min-width: 1280px)" srcset="img/header1.png">
-            <source media="(min-width:960px)" srcset="img/header2.png">
-            <source media="(min-width: 480px)" srcset="img/header3.png">
-            <img src="img/header1.png" alt="Header" style="width:auto; margin-top:50px; margin-left:auto; margin-right:auto; display:block;">
-        </picture>
-        </div>
-        
+        <section id="projects">
+            <h1>Slideshow</h1>
+            <li><a href="slideshow.html">Slideshow Assignment</a></li>
+            
+            <h1>Video</h1>
+            <video controls muted loop preload playsinline width="450" height="411">
+                <source src="video/medp285.mp4" type="video/mp4">
+                <!-- Text track for the video-->
+                <track src="video/assignment6.vtt" kind="captions" srclang="en" label="English" default/>
+            </video>
 
-        <header id="home">
-            <h1>cozy space</h1>
-            <p>Current work in progress!</p>
-        </header>
+            <h1>Collage</h1>
+            <li><a href="collage.html">Collage Assignment</a></li>
+        </section>
 
-
-        <!-- Animations -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-           AOS.init();
-       </script>
     </body>
 </html>

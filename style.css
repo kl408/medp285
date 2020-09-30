@@ -1,12 +1,122 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body{
     font-family: 'Space Mono', monospace;
-    color: #0a0e42;
-    background: rgb(133,89,136);
-    background: linear-gradient(0deg, rgb(153, 144, 230) 0%, rgb(31, 3, 54) 100%);
+    color: #eff48e;
+    background: #70D068
   }
 
 
+/* Navigation menu */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #3E978B;
+}
+
+.logo{
+  color: #d2e603;
+}
+.logo li{ /* To get rid of list points */
+  list-style: none;
+}
+.logo a{
+  color: #d2e603;
+  text-decoration: none;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-links li{ /* To get rid of list points */
+  list-style: none;
+}
 .nav-links a{
-    color: #F2B5F3;
-    text-decoration: none;
-  }
+  color: #BCE784;
+  text-decoration: none;
+}
+
+/* Home - Landing page */
+#home{
+  margin-top: 50px;
+  text-align: center;
+}
+
+#home h1{
+  color: #3E978B;
+  font-size: 30px;
+}
+
+#home p{
+  font-size: 20px;
+}
+
+/* Projects */
+#projects{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+/* Collage */
+.collage{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding: 60px;
+  /*background: green;*/
+  background-image: url(https://thumbs.gfycat.com/DampWastefulHumpbackwhale-size_restricted.gif);
+  position: absolute;
+}
+
+.container{
+  padding: 20px;
+  margin: 5px;
+  /* background: white;*/
+  flex: 1;
+  text-align: center;
+}
+
+.container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container p{
+  margin-top: 30px;
+  color: white;
+}
+
+#water{
+  color: #7ec7e9;
+}
+
+#earth{
+  margin-top: 150px;
+  color: #8fec43;
+}
+
+#fire{
+  margin-top: 30px;
+  color: #f5ab8d;
+}
+
+#air{
+  margin-top: 90px;
+  color: #fde616;
+}
+
+#rel2{
+  position: fixed;
+  text-align: center;
+  z-index: 10;
+  margin-left: 850px;
+}
