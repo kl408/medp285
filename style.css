@@ -7,9 +7,14 @@
 body{
     font-family: 'Space Mono', monospace;
     color: #eff48e;
-    background: #70D068
+    background: #70D068;
   }
 
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
 /* Navigation menu */
 nav{
@@ -119,4 +124,31 @@ nav{
   text-align: center;
   z-index: 10;
   margin-left: 850px;
+}
+
+
+/*CSS Grid Layouts*/
+
+.column {
+  flex: 1; /*spreads divs across page evenly and all equal heights by default */
+  padding: 10px;
+  height: 400px;
+}
+
+.row {
+  display: flex; /*flexbox layout */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+#spoopy{
+  margin-top: 50px;
+  margin-bottom: 35px;
+  text-align: center;
 }
