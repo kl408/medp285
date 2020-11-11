@@ -5,9 +5,9 @@
 }
 
 body{
-    font-family: 'Space Mono', monospace;
-    color: #eff48e;
-    background: #70D068;
+    font-family: 'Mulish', sans-serif;
+    color: #273857;
+    background: #F5E6CE;
   }
 
   main {
@@ -22,17 +22,17 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #3E978B;
+  background-color: #273857;
 }
 
 .logo{
-  color: #d2e603;
+  color: #F8C01D;
 }
 .logo li{ /* To get rid of list points */
   list-style: none;
 }
 .logo a{
-  color: #d2e603;
+  color: #F8C01D;
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ nav{
   list-style: none;
 }
 .nav-links a{
-  color: #BCE784;
+  color: #F8C01D;
   text-decoration: none;
 }
 
@@ -56,7 +56,7 @@ nav{
 }
 
 #home h1{
-  color: #3E978B;
+  color: #273857;
   font-size: 30px;
 }
 

@@ -13,6 +13,27 @@
          <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
          <!-- Favicon -->
          <link rel="icon" href="img/favicon.ico">
+         <!-- Overriding some style for clarity -->
+         <style>
+             body {
+                 background-color: 	#b4c394;
+                 font-family: 'Mulish', sans-serif;
+                 color: black;
+             }
+
+             .pizza {
+                 margin-top: 10vh;
+                 text-align: center;
+             }
+
+             #pizza_question {
+                 margin-top: 1vh;
+             }
+
+             #status {
+                 margin-top: 2vh;
+             }
+         </style>
     </head>
 
     <body>
@@ -29,19 +50,25 @@
             </ul>
         </nav>
 
-        <header id="home">
-            <h1>Hi, I'm Kristy!</h1>
-        </header>
+        <div class="pizza">
+            <h1>
+              What a fine pizza!
+            </h1>
+            <h3 id="pizza_question">
+              Would you like to take a slice?
+            </h3>
+            <div id="image-container">
+              <img src="img/pizza/whole_pizza.png"/>
+            </div>
+            <button id="button">
+              Click to Eat!
+            </button>
+            <div id="status">
+                <!--    We will add text here later.      -->
+            </div>
+        </div>
 
-        <hr />
-            <section id="about">
-                <h1>About me</h1>
-                <p> An aspiring UX/UI Designer and Front-End Developer graduating from
-                    Hunter College in Spring 2022. 
-                </p>
-            </section>
-        <hr>
-
-        Something for my about page.
     </body>
+    <!-- Script for webpage -->
+    <script src="js/eatingPizza.js"></script>
 </html>
