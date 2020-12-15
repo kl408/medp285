@@ -22,11 +22,11 @@
         
                 <h1>Category 1</h1>
         
-                <button class="btn_nav projects_link">Category 1</button>
-                <button class="btn_nav skills_link">Category 2</button>
-                <button class="btn_nav home_link">Category 3</button>
-                <button class="btn_nav about_link">Category 4</button>
-                <button class="btn_nav contact_link">Category 5</button>
+                <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
+                <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
+                <button class="btn_nav home_link" onclick="playSound('ac_main')">2001</button>
+                <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
+                <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
                 <p>Placeholder text.</p>
 
@@ -35,19 +35,21 @@
         
             </div>
             </div>
+            <audio loop id="pac_man_theme" src="audio/pac_man_theme.mp3"></audio>
         </div>
 
         <!-- Game category 2 -->
-        <div class="page__style skills">
+        <div class="page__style skills" onclick="playSound('dire_docks')">
             <div class="page__description">
             <div id="skills">
                 <h1>Category 2</h1>
+                
         
-                <button class="btn_nav projects_link">Category 1</button>
-                <button class="btn_nav skills_link">Category 2</button>
-                <button class="btn_nav home_link">Category 3</button>
-                <button class="btn_nav about_link">Category 4</button>
-                <button class="btn_nav contact_link">Category 5</button>
+                <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
+                <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
+                <button class="btn_nav home_link" onclick="playSound('ac_main')">2001</button>
+                <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
+                <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
                 <p> gasp! you found me.
                 </p>
@@ -55,6 +57,7 @@
         
             </div>
             </div>
+            <audio loop id='dire_docks' src="audio/super_mario_dire_dire_docks.mp3"></audio>
         </div>
         
         <!-- Game category 4 -->
@@ -63,37 +66,42 @@
             <div id="about">
                 <h1>Category 4</h1>
         
-                <button class="btn_nav projects_link">Category 1</button>
-                <button class="btn_nav skills_link">Category 2</button>
-                <button class="btn_nav home_link">Category 3</button>
-                <button class="btn_nav about_link">Category 4</button>
-                <button class="btn_nav contact_link">Category 5</button>
+                <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
+                <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
+                <button class="btn_nav home_link" onclick="playSound('ac_main')">2001</button>
+                <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
+                <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
                 <p>Placeholder text</p>
         
             </div>
             </div>
+            <audio loop id='deemo_saika' src="audio/deemo_saika.mp3"></audio>
         </div>
 
         <!-- Game category 5-->
-        <div class="page__style contact">
+        <div class="page__style contact" onclick="playSound('kda_more')">
             <div class="page__description">
             <div id="contact">
                 <h1>Category 5</h1>
         
-                <button class="btn_nav projects_link">Category 1</button>
-                <button class="btn_nav skills_link">Category 2</button>
-                <button class="btn_nav home_link">Category 3</button>
-                <button class="btn_nav about_link">Category 4</button>
-                <button class="btn_nav contact_link">Category 5</button>
+                <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
+                <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
+                <button class="btn_nav home_link" onclick="playSound('ac_main')">2001</button>
+                <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
+                <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
                 <p>Placeholder text.</p>
 
-                <img src="img/demo_img/kda_akali.png">
-                <img src="img/demo_img/kda_ahri.png">
+                
+                
+                <img class="ahri" src="img/kda_ahri_svg1.svg" style="width: 30%; height:30%;">
+                <img src="img/kda_ahri_svg1.svg">
+                
         
             </div>
             </div>
+            <audio loop id='kda_more' src="audio/kda_more.mp3"></audio>
         </div>
 
         <!-- Game category 3-->
@@ -105,16 +113,41 @@
         
                 <h1>Category 3</h1>
         
-                <button class="btn_nav projects_link">Category 1</button>
-                <button class="btn_nav skills_link">Category 2</button>
-                <button class="btn_nav home_link">Category 3</button>
-                <button class="btn_nav about_link">Category 4</button>
-                <button class="btn_nav contact_link">Category 5</button>
+                <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
+                <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
+                <button class="btn_nav home_link" onclick="playSound('ac_main')">2001</button>
+                <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
+                <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
+        
+                <p>Placeholder text.</p>
+            </div>
+            </div>
+            <audio loop id="ac_main" src="audio/ac_main_theme.mp3"></audio>
+        </div>
+
+
+        <!-- Landing -->
+        <!-- Remember to edit class here and in css-->
+        <div class="page__style landing">
+            <div class="page__description">
+            <div id="home">
+        
+                <div class="box"></div>
+        
+                <h1>Testing, choose your thing.</h1>
+        
+                <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
+                <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
+                <button class="btn_nav home_link" onclick="playSound('ac_main')">2001</button>
+                <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
+                <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
                 <p>Placeholder text.</p>
             </div>
             </div>
         </div>
+
+
     </body>
 
     <!--script-->

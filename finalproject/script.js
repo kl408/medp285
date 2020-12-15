@@ -1,3 +1,5 @@
+/****** jQuery for div animation ******/ 
+
 $(".btn_nav").click(function () {
   // animate content
   $(".page__style").addClass("animate_content");
@@ -43,3 +45,28 @@ $(".contact_link").click(function () {
     $(".contact").addClass("fadeIn");
   }, 1500);
 });
+
+
+/****** Audio ******/
+// https://www.w3schools.com/jsref/dom_obj_audio.asp
+function playSound(soundobj) {
+      var thissound=document.getElementById(soundobj);
+      thissound.play();
+}
+
+// turn off this function to let the sound continue
+function stopSound(soundobj) {
+      var thissound=document.getElementById(soundobj);
+      thissound.pause();
+}
+
+
+/*** if audio overlaps***/
+window.addEventListener("play", function(evt)
+{
+    if(window.$_currentlyPlaying && window.$_currentlyPlaying != evt.target)
+    {
+        window.$_currentlyPlaying.pause();
+    } 
+    window.$_currentlyPlaying = evt.target;
+}, true);
