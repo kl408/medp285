@@ -1,3 +1,10 @@
+/* Font stuff */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 *,
 :before,
 :after {
@@ -68,30 +75,201 @@
 .home {
   background: #00d8a3;
 }
+
+.home .btn_nav {
+  background: #005A2E;
+}
+
+.home p {
+  color: #00331A;
+  margin-right: 10vw;
+  margin-left:50vw;
+  margin-top: 3vh;
+  font-size: 3vh;
+  border-style: solid;
+  border-color: #005A2E;
+  border-radius: 3vh;
+  padding: 5vh;
+}
+
+.ac_desc img{
+  float: left !important;
+  margin-left: 10vw !important;
+}
+
+
+
+
+
 /*  Projects
 -----------------------------------*/
 .projects {
   background: #000000; /*#ee466d;*/
 }
+
+.projects .btn_nav {
+  background: #1D0FFF;
+}
+
+#pacman_desc{
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 10vh;;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border-style: solid;
+  border-color: #1D0FFF;
+  border-radius: 3vh;
+  padding: 5vh;/* For spacing within the border */
+}
+
 /*  Skills
 -----------------------------------*/
 .skills {
   background: #2187b1;/*#fdd56e;*/
 }
 
-.skills p {
-  color: black;
+.skills h1 {
+  font-family: 'Bungee', cursive;
 }
+
+.skills h3 {
+  font-family: 'Bungee', cursive;
+}
+
+.skills p {
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 2vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  z-index: 289;
+}
+
+/* Special thanks to Ted McDonald for creating this wave animation!*/
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+  opacity: 0.6;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
 /*  About
 -----------------------------------*/
 .about {
-  background: #ffffff;/*#2187b1;*/
+  background: #ece5eb;/*#2187b1;*/
 }
+
+.about .btn_nav {
+  background: #40163F;
+}
+
+.about h1 {
+  color: #1F0F0F;
+  font-family: 'Marcellus', serif;
+}
+
+.about h3 {
+  color: #1F0F0F;
+  font-family: 'Marcellus', serif;
+  font-size: 4vh;
+  margin-right: 10vw;
+}
+
+.about p {
+  color: #1F0F0F;
+  font-family: 'Marcellus', serif;
+  margin-right: 10vw;
+  margin-top: 3vh;
+  font-size: 2.5vh;
+}
+
+.deemo_desc img{
+  float: left !important;
+  margin-left: 10vw !important;
+}
+
+var sakura = new Sakura('about', {
+  // options here
+});
+
+
 /*  Contact
 -----------------------------------*/
 .contact {
   background: #8a38dc;
 }
+
+.contact h1 {
+  color: #D9F4FE;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+}
+
+.contact h3 {
+  color: #D9F4FE;
+  font-family: 'Roboto Slab', serif;
+}
+
+.contact p {
+  color: #D9F4FE;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 10vw;
+  margin-right: 50vw;
+  margin-top: 5vh;
+}
+
+.contact img{
+  float: right !important;
+  margin-right: 10vw !important;
+}
+
+/*  Landing
+-----------------------------------*/
+.landing p {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 7vh;
+  line-height: 4vh;
+  letter-spacing: 0.1vw;
+}
+
 /*****************************************************************
 ~ Mobile media-queries (max-width: 767px)
 ******************************************************************/
@@ -211,6 +389,21 @@
 	}
 }
 
+.red_ghost {
+  animation: float 5s ease-in-out infinite;
+}
+
+.cyan_ghost {
+  animation: float 4s ease-in-out infinite;
+}
+
+.orange_ghost {
+  animation: float 6s ease-in-out infinite;
+}
+
+.mario {
+  animation: float 3s ease-in-out infinite;
+}
 
 .ahri {
   /*
@@ -220,3 +413,4 @@
   */
   animation: float 6s ease-in-out infinite;
 }
+

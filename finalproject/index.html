@@ -9,6 +9,8 @@
         <meta name="author" content="Kristy" />
         <!-- CSS file -->
         <link rel="stylesheet" href="style.css"/>
+        <!-- Fonts -->
+        <link href="//db.onlinewebfonts.com/c/5b2d6c0651588999355f8bedf50b7431?family=Fantique+Four" rel="stylesheet" type="text/css"/>
         <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
@@ -20,7 +22,7 @@
             <div class="page__description">
             <div id="projects">
         
-                <h1>Category 1</h1>
+                <h1>Pac-Man</h1>
         
                 <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
                 <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
@@ -28,18 +30,26 @@
                 <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
                 <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
-                <p>Placeholder text.</p>
+                
 
                 <!--
                 <img src="img/demo_img/pacman.png">
                 <img src="img/demo_img/pacman_ghost.png">
                 -->
-
-                <img src="img/pacman.svg" style="width: 13%; height:13%; margin-top: 5vh; margin-right: 15vw;">
-                <img src="img/red_ghost.svg" style="width: 13%; height:13%; margin-top: 5vh; margin-right: 2vw;">
-                <img src="img/cyan_ghost.svg" style="width: 13%; height:13%; margin-top: 5vh; margin-right: 2vw;">
-                <img src="img/orange_ghost.svg" style="width: 13%; height:13%; margin-top: 5vh;">
-        
+                <div>
+                    <img src="img/pacman.svg" style="width: 13%; height:13%; margin-top: 5vh; margin-right: 15vw;">
+                    <img class="red_ghost" src="img/red_ghost.svg" style="width: 13%; height:13%; margin-top: 5vh; margin-right: 2vw;">
+                    <img class="cyan_ghost" src="img/cyan_ghost.svg" style="width: 13%; height:13%; margin-top: 5vh; margin-right: 2vw;">
+                    <img class="orange_ghost" src="img/orange_ghost.svg" style="width: 13%; height:13%; margin-top: 5vh;">
+                </div>
+                <div>
+                    <p id="pacman_desc">A classic from the 80s, Pac-Man is a maze arcade game developed by Namco.
+                        The objective of the game is to consume all the white dots within the maze while avoiding
+                        four colored ghosts. Power pellets can be consumed to turn ghosts into blue ghosts which
+                        Pac-Man can consume for bonus points.
+                    </p>
+                </div>
+                
             </div>
             </div>
             <audio loop id="pac_man_theme" src="audio/pac_man_theme.mp3"></audio>
@@ -49,7 +59,7 @@
         <div class="page__style skills" onclick="playSound('dire_docks')">
             <div class="page__description">
             <div id="skills">
-                <h1>Category 2</h1>
+                <h1>Super Mario 64</h1>
                 
         
                 <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
@@ -58,11 +68,22 @@
                 <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
                 <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
-                <p> gasp! you found me.
-                </p>
-                <!--<img src="img/demo_img/mario.png">-->
+                <div>
+                    <img class="mario" src="img/mario.svg" style="width: 15%; height: 15%; margin-top: 5vh;">
+                </div>
+                <div>
+                    <h3>Super Mario 64 - Dire Dire Docks</h3>
+                    <p> Super Mario 64 is a 3D platformer game developed for the Nintendo 64. It features
+                        open-world playability, degrees of freedom through all three axes in space, and
+                         relatively large areas which are composed primarily of true 3D polygons. The game is believed
+                         to be one of the main contributors to the Nintendo 64's success.
+                    </p>
+                </div>
 
-                <img src="img/mario.svg" style="width: 20%; height: 20%;">
+                <div class="ocean">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
         
             </div>
             </div>
@@ -73,28 +94,37 @@
         <div class="page__style about">
             <div class="page__description">
             <div id="about">
-                <h1>Category 4</h1>
+                <h1>Deemo</h1>
         
                 <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
                 <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
                 <button class="btn_nav home_link" onclick="playSound('ac_main')">2001</button>
                 <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
                 <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
-        
-                <p>Placeholder text</p>
 
-                <img src="img/deemo_saika.svg" style="width: 40%; height: 40%;">
-        
+                <div class="deemo_desc">
+                    <img src="img/deemo_saika.svg" style="width: 40%; height: 40%; margin-left:0px;">
+                    <h3>Rapdit - Saika</h3>
+                    <p>Deemo is a rhythm video game developed by Rayark on the Unity Engine which was released
+                        in November 2013 on Android and iOS. The game currently has over 10 million players.
+                        The game features several different artists with story incorporated into the gameplay
+                        from the songs to world building.
+                        <br><br>
+                        The game has been released on other platformers, with versions available on the PlayStation
+                        Vita, PlayStation 4, and the Nintendo Switch. 
+                    </p>
+                </div>
             </div>
             </div>
             <audio loop id='deemo_saika' src="audio/deemo_saika.mp3"></audio>
         </div>
 
         <!-- Game category 5-->
-        <div class="page__style contact" onclick="playSound('kda_more')">
+        <div class="page__style contact" onclick="playSound('kda_more')" 
+        style="background-image: linear-gradient(#8a38dc, #070f34) !important;">
             <div class="page__description">
             <div id="contact">
-                <h1>Category 5</h1>
+                <h1>League of Legends</h1>
         
                 <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
                 <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
@@ -102,13 +132,23 @@
                 <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
                 <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
-                <p>Placeholder text.</p>
 
                 
-                
-                <img class="ahri" src="img/kda_ahri_svg1.svg" style="width: 30%; height:30%;">
-                <img src="img/kda_ahri_svg1.svg">
-                
+                <div class="league_desc">
+                    <img class="ahri" src="img/kda_ahri_svg1.svg" style="width: 30%; height:30%;">
+                    <h3>K/DA - More (ft. Madison Beer, (G)I-DLE, Lexie Liu, Jaira Burns, Seraphine)</h3>
+                    <p> 
+                        Created in 2009, League of Legends is a Multiplayer Online Battle Arena developed
+                        by Riot Games. One of the largest esports and maintaining a large following on streaming
+                        platforms, the game has over 100 million players. It is playable on Windows and macOS and
+                        the mobile version, League of Legends: Wild Rift, in beta this year. 
+                        <br><br>
+                        In 2018, Riot Games collaborated with selected artists to create the virtual pop group
+                        K/DA that merged Riot's unique music with pop and K-pop influences. The group's debut
+                        song POP/STARS currently has over 400 million views. In October 2020, K/DA released 
+                        their first EP, ALL OUT, with the title track MORE.
+                    </p>
+                </div>
         
             </div>
             </div>
@@ -122,7 +162,7 @@
         
                 <div class="box"></div>
         
-                <h1>Category 3</h1>
+                <h1>Animal Crossing</h1>
         
                 <button class="btn_nav projects_link" onclick="playSound('pac_man_theme')">1980</button>
                 <button class="btn_nav skills_link" onclick="playSound('dire_docks')">1996</button>
@@ -130,9 +170,16 @@
                 <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
                 <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
-                <p>Placeholder text.</p>
-
-                <img src="img/tom_nook.svg" style="width: 30%; height:30%;">
+                <div class="ac_desc">
+                    <img src="img/tom_nook.svg" style="width: 30%; height: 30%;">
+                    <p class="ac_desc_p"> Animal Crossing is a life simulation videogame developed by Nintendo in 2001. Initially
+                        released on the Nintendo 64, it was made compatible with the GameCube. The game's village
+                        is populated by anthropomorphic animals. In an open-world environment, the game is played
+                        in real-time where players can complete different tasks and goals. 
+                        <br><br>
+                        pay up buddy
+                    </p>
+                </div>
             </div>
             </div>
             <audio loop id="ac_main" src="audio/ac_main_theme.mp3"></audio>
@@ -155,7 +202,11 @@
                 <button class="btn_nav about_link" onclick="playSound('deemo_saika')">2013</button>
                 <button class="btn_nav contact_link" onclick="playSound('kda_more')">2020</button>
         
-                <p>Click on a button to proceed.</p>
+                <p>This project is meant to explore different music pieces from video games spanning 
+                    across the last 4 decades. Although it spans only across 5 pieces, it highlights
+                    different styles of music and the various styles of videogames from gameplay to 
+                    aesthetic. Thank you for stopping by and enjoy!
+                </p>
             </div>
             </div>
         </div>
