@@ -245,6 +245,7 @@ var sakura = new Sakura('about', {
 .contact h3 {
   color: #D9F4FE;
   font-family: 'Roboto Slab', serif;
+  font-size: 2.7vh;
 }
 
 .contact p {
@@ -253,6 +254,7 @@ var sakura = new Sakura('about', {
   margin-left: 10vw;
   margin-right: 50vw;
   margin-top: 5vh;
+  font-size: 2.3vh;
 }
 
 .contact img{
