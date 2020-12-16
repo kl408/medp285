@@ -9,7 +9,7 @@
   display: none;
 }
 .page__style {
-  background: #6d326d;
+  background: #131313;
   font-family: OpenSans-Regular, sans-serif;
   position: fixed;
   top: 0;
@@ -71,12 +71,12 @@
 /*  Projects
 -----------------------------------*/
 .projects {
-  background: #ee466d;
+  background: #000000; /*#ee466d;*/
 }
 /*  Skills
 -----------------------------------*/
 .skills {
-  background: #fdd56e;
+  background: #2187b1;/*#fdd56e;*/
 }
 
 .skills p {
@@ -85,7 +85,7 @@
 /*  About
 -----------------------------------*/
 .about {
-  background: #2187b1;
+  background: #ffffff;/*#2187b1;*/
 }
 /*  Contact
 -----------------------------------*/
