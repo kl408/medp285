@@ -107,6 +107,10 @@
   background: #000000; /*#ee466d;*/
 }
 
+.projects h1 {
+  font-family: 'Press Start 2P', cursive;
+}
+
 .projects .btn_nav {
   background: #1D0FFF;
 }
